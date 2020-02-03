@@ -90,5 +90,4 @@ def test_random_brewery(id_brewery):
     Проверка, поиск пивоварни по случайному ид
     """
     response = API_BREWERY.get(path='/breweries/%s' % id_brewery)
-    print(response.json())
     assert response.ok
